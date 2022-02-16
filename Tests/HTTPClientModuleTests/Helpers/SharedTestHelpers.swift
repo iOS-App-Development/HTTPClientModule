@@ -20,8 +20,8 @@ func absoluteServerURL(uri:String) -> URL {
     return URL(string: "\(baseURL.absoluteString)\(uri)")!
 }
 var anyLocalFileURL:URL {
-    let bundle = Bundle.module
-    return bundle.url(forResource: "SampleFile", withExtension: "jpg", subdirectory: "Resources")!
+    let bundle = Bundle.main
+    return bundle.url(forResource: "SampleFile1", withExtension: "jpg", subdirectory: "Resources")!
 }
 
 var anyFruitItem:RemoteFruitItem {
